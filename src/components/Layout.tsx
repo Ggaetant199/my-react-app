@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import "../assets/styles/Layout.css";
 
 //@ts-ignore
 function  Layout({children, name="default"}){
@@ -16,7 +17,9 @@ function  Layout({children, name="default"}){
   return  (
     <>
       <Rheader/>
-       {children}
+        <div  className="layout">
+          {children}
+        </div>
       <Rfooter/>
     </>
   );
